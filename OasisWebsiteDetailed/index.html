@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis - Biblioteca Digital e Centro Olímpico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Oasis - Biblioteca Digital e Centro Olímpico</h1>
+        <video autoplay muted loop id="header-video">
+            <source src="assets/videos/header.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </header>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#biblioteca">Biblioteca</a></li>
+            <li><a href="#centro-olimpico">Centro Olímpico</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content area -->
+    <main>
+        <!-- Section about the library -->
+        <section id="biblioteca" class="section-background" style="background-image: url('assets/images/library.jpg');">
+            <h2>Sobre a Biblioteca</h2>
+            <p>A Oasis centraliza informações de acervos, serviços, e materiais para consulta de visitantes e profissionais.</p>
+        </section>
+        
+        <!-- Section for books -->
+        <section id="livros" class="section-background" style="background-image: url('assets/images/books.jpg');">
+            <h2>Livros</h2>
+            <div class="list-container">
+                <h3>Lista de Livros</h3>
+                <div id="book-list" class="list-item">
+                    <!-- Livros serão listados aqui -->
+                </div>
+                <a href="books.html">Ver todos os livros</a>
+            </div>
+            <form id="book-form">
+                <h3>Adicionar Livro</h3>
+                <label for="book-title">Título:</label>
+                <input type="text" id="book-title" name="title" required>
+                <label for="book-author">Autor:</label>
+                <input type="text" id="book-author" name="author" required>
+                <label for="book-category">Categoria:</label>
+                <input type="text" id="book-category" name="category" required>
+                <label for="book-published-date">Data de Publicação:</label>
+                <input type="date" id="book-published-date" name="publishedDate" required>
+                <label for="book-summary">Resumo:</label>
+                <textarea id="book-summary" name="summary" required></textarea>
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </section>
+        
+        <!-- Section for authors -->
+        <section id="autores" class="section-background" style="background-image: url('assets/images/authors.jpg');">
+            <h2>Autores</h2>
+            <div class="list-container">
+                <h3>Lista de Autores</h3>
+                <div id="author-list" class="list-item">
+                    <!-- Autores serão listados aqui -->
+                </div>
+                <a href="authors.html">Ver todos os autores</a>
+            </div>
+            <form id="author-form">
+                <h3>Adicionar Autor</h3>
+                <label for="author-name">Nome:</label>
+                <input type="text" id="author-name" name="name" required>
+                <label for="author-bio">Biografia:</label>
+                <textarea id="author-bio" name="bio" required></textarea>
+                <label for="author-birthdate">Data de Nascimento:</label>
+                <input type="date" id="author-birthdate" name="birthDate" required>
+                <button type="submit">Adicionar Autor</button>
+            </form>
+        </section>
+        
+        <!-- Section for categories -->
+        <section id="categorias" class="section-background" style="background-image: url('assets/images/categories.jpg');">
+            <h2>Categorias</h2>
+            <div class="list-container">
+                <h3>Lista de Categorias</h3>
+                <div id="category-list" class="list-item">
+                    <!-- Categorias serão listados aqui -->
+                </div>
+                <a href="categories.html">Ver todas as categorias</a>
+            </div>
+            <form id="category-form">
+                <h3>Adicionar Categoria</h3>
+                <label for="category-name">Nome:</label>
+                <input type="text" id="category-name" name="name" required>
+                <button type="submit">Adicionar Categoria</button>
+            </form>
+        </section>
+        
+        <!-- Section about the Olympic Center -->
+        <section id="centro-olimpico" class="section-background" style="background-image: url('assets/images/olympic-center.jpg');">
+            <h2>Centro Olímpico</h2>
+            <p>Fique por dentro das novidades, tire suas dúvidas, e acesse informações institucionais.</p>
+        </section>
+        
+        <!-- Contact section -->
+        <section id="contato" class="section-background" style="background-image: url('assets/images/contact.jpg');">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+            <!-- Contact form -->
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="""email" name="""email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="""message" name="""message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer section -->
+    <footer class="main-footer">
+        <p>© 2024 Oasis - Biblioteca Digital e Centro Olímpico</p>
+    </footer>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
